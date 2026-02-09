@@ -56,20 +56,8 @@ export default function DrugPreventionSite() {
     const handleScroll = () => setScrollY(window.scrollY)
     window.addEventListener("scroll", handleScroll)
 
-    const removeV0Button = () => {
-      const v0Button = document.querySelector('[id*="v0-built-with-button"]')
-      if (v0Button) {
-        v0Button.remove()
-      }
-    }
-
-    // Remove immediately and then check every 500ms
-    removeV0Button()
-    const intervalId = setInterval(removeV0Button, 250)
-
     return () => {
       window.removeEventListener("scroll", handleScroll)
-      clearInterval(intervalId)
     }
   }, [])
 
@@ -1500,7 +1488,7 @@ export default function DrugPreventionSite() {
           </div>
 
           <div className="border-t border-white/20 mt-8 pt-8 text-center">
-            <p className="text-white/80">© 2025 PH Care. All rights reserved. Together we can make a difference.</p>
+            <p className="text-white/80">© 2026 PH Care. All rights reserved. Together we can make a difference.</p>
           </div>
         </div>
       </footer>
