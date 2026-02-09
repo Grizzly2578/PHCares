@@ -85,6 +85,15 @@ export default function DrugPreventionSite() {
 
   const galleryAlbums = [
     {
+      id: "garden-tools-donation",
+      title: "God's Abundant Garden Tools Donation",
+      description:
+        "This project is in collaboration with NSTP CLASS MW 3:00-4:30 Group 1, which aims to donate additional tools to the God's Abundant Garden.",
+      coverImage: "/placeholder.svg",
+      images: [],
+      date: "February 10, 2026",
+    },
+    {
       id: "vegetable-planting-1",
       title: "Vegetable Planting Project Morning Team",
       description:
@@ -1432,7 +1441,7 @@ export default function DrugPreventionSite() {
                 <span className="text-xl font-bold">PH Care</span>
               </div>
               <p className="text-white/80">
-                Empowering communities through hope, care, education, and support in the fight against drug abuse.
+                Strengthen communities by caring for individuals and promoting well-being through service and meaningful programs that encourage growth, responsibility, shared support and positive change.
               </p>
             </div>
 
@@ -1480,7 +1489,7 @@ export default function DrugPreventionSite() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Emergency Support</h4>
               <p className="text-white/80 mb-2">Crisis Hotline: 0919-057-1553</p>
-              <p className="text-white/80 mb-4">Available 24/7</p>
+              <p className="text-white/80 mb-4">Available 24/7 </p>
               <div className="flex space-x-4">
                 <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors cursor-pointer">
                   <MessageCircle className="w-4 h-4" />
