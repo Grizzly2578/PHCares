@@ -35,6 +35,8 @@ import {
   ChevronRight,
   ImageIcon,
   ArrowLeft,
+  Eye,
+  Target,
 } from "lucide-react"
 
 export default function DrugPreventionSite() {
@@ -51,6 +53,7 @@ export default function DrugPreventionSite() {
   } | null>(null)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
+  // Cleaned up useEffect: Removed the v0 button removal script
   useEffect(() => {
     setIsVisible(true)
     const handleScroll = () => setScrollY(window.scrollY)
@@ -510,6 +513,7 @@ export default function DrugPreventionSite() {
               </div>
             </div>
 
+            {/* Mission Statement */}
             <div className="mb-12 p-8 bg-gradient-to-br from-[#ECF0F1] to-white rounded-3xl shadow-lg">
               <div className="grid md:grid-cols-4 gap-6 mb-8">
                 <div className="text-center group">
@@ -538,10 +542,36 @@ export default function DrugPreventionSite() {
                 </div>
               </div>
               <p className="text-lg text-gray-600 text-pretty">
-                We believe in the power of care, community, and positive choices. PH Care's mission is to raise
-                awareness about drug abuse prevention while promoting healthy lifestyles and supporting those on their
-                recovery journey.
+                We believe in the power of care, community, and positive choices. PH Care's mission is to strengthen
+                communities by caring for individuals and promoting well-being through service and meaningful programs
+                that encourage growth, responsibility, shared support and positive change.
               </p>
+            </div>
+
+            {/* Vision and Goal */}
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <div className="p-8 bg-gradient-to-br from-blue-50 to-white rounded-3xl shadow-lg border border-blue-100 hover:shadow-xl transition-shadow duration-300">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                  <Eye className="w-8 h-8 text-blue-500" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Vision</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  A caring community where individuals grow, succeed, and support one another toward a healthier, more
+                  positive future, creating meaningful change by nurturing people, building communities, and through
+                  acts of care.
+                </p>
+              </div>
+
+              <div className="p-8 bg-gradient-to-br from-green-50 to-white rounded-3xl shadow-lg border border-green-100 hover:shadow-xl transition-shadow duration-300">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                  <Target className="w-8 h-8 text-green-500" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Goal</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  To promote well-being and growth, nurturing individuals and communities while encouraging mutual
+                  support, development, and positive change through care.
+                </p>
+              </div>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
