@@ -37,6 +37,7 @@ import {
   ArrowLeft,
   Eye,
   Target,
+  Flag,
 } from "lucide-react"
 
 export default function DrugPreventionSite() {
@@ -515,31 +516,8 @@ export default function DrugPreventionSite() {
 
             {/* Mission Statement */}
             <div className="mb-12 p-8 bg-gradient-to-br from-[#ECF0F1] to-white rounded-3xl shadow-lg">
-              <div className="grid md:grid-cols-4 gap-6 mb-8">
-                <div className="text-center group">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#1ABC9C] to-[#2ECC71] rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
-                    <Dumbbell className="w-8 h-8 text-white" />
-                  </div>
-                  <span className="text-sm font-medium text-gray-700">Sports</span>
-                </div>
-                <div className="text-center group">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#2ECC71] to-[#3498DB] rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
-                    <BookOpen className="w-8 h-8 text-white" />
-                  </div>
-                  <span className="text-sm font-medium text-gray-700">Education</span>
-                </div>
-                <div className="text-center group">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#3498DB] to-[#E67E22] rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
-                    <Heart className="w-8 h-8 text-white" />
-                  </div>
-                  <span className="text-sm font-medium text-gray-700">Art</span>
-                </div>
-                <div className="text-center group">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#E67E22] to-[#1ABC9C] rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
-                    <Users className="w-8 h-8 text-white" />
-                  </div>
-                  <span className="text-sm font-medium text-gray-700">Community</span>
-                </div>
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <Flag className="w-8 h-8 text-[#E67E22]" />
               </div>
               <p className="text-lg text-gray-600 text-pretty">
                 We believe in the power of care, community, and positive choices. PH Care's mission is to strengthen
@@ -624,7 +602,7 @@ export default function DrugPreventionSite() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <div className="inline-block p-6 bg-white rounded-2xl shadow-lg border-2 border-[#1ABC9C]/20">
-                <h2 className="text-4xl font-bold text-gray-800 mb-2">Understanding the Risks</h2>
+                <h2 className="text-4xl font-bold text-gray-800 mb-2">Understanding The Risks of Drugs</h2>
                 <div className="w-20 h-1 bg-gradient-to-r from-[#E67E22] to-[#1ABC9C] mx-auto mb-3"></div>
                 <p className="text-gray-600">Knowledge empowers better choices and opens paths to healing</p>
               </div>
@@ -1384,11 +1362,11 @@ export default function DrugPreventionSite() {
                   <div className="space-y-4 mb-8">
                     <div className="flex items-center space-x-3">
                       <Phone className="w-5 h-5 text-[#1ABC9C]" />
-                      <span className="text-gray-700">Crisis Hotline: 1-800-662-4357</span>
+                      <span className="text-gray-700">Crisis Hotline: 0919-057-1553</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <MessageCircle className="w-5 h-5 text-[#1ABC9C]" />
-                      <span className="text-gray-700">Text Support: Text HOME to 741741</span>
+                      <span className="text-gray-700">Text Support: Text to 0917-899-8727</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <Mail className="w-5 h-5 text-[#1ABC9C]" />
@@ -1501,7 +1479,7 @@ export default function DrugPreventionSite() {
 
             <div>
               <h4 className="text-lg font-semibold mb-4">Emergency Support</h4>
-              <p className="text-white/80 mb-2">Crisis Hotline: 1-800-662-4357</p>
+              <p className="text-white/80 mb-2">Crisis Hotline: 0919-057-1553</p>
               <p className="text-white/80 mb-4">Available 24/7</p>
               <div className="flex space-x-4">
                 <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors cursor-pointer">
